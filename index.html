@@ -404,14 +404,14 @@
       
       <!-- contact form -->
       <div class="col-md-8">
-        <form id="contact-form" method="post" action="contact.php" role="form">
-          <div class="messages"></div>
+        <form id="contact-form" method="post" action="contact.php" role="form" novalidate="true">
+          <div class="messages"><div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>Contact form successfully submitted. Thank you, I will get back to you soon!</div></div>
           <div class="controls">
             <div class="row">
               <div class="col-md-6">
-                <div class="form-group">
+                <div class="form-group has-error has-danger">
                   <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                  <div class="help-block with-errors"></div>
+                  <div class="help-block with-errors"><ul class="list-unstyled"><li>Firstname is required.</li></ul></div>
                 </div>
               </div>
               <div class="col-md-6">
@@ -438,12 +438,12 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required data-error="Please,leave us a message."></textarea>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="" data-error="Please,leave us a message."></textarea>
                   <div class="help-block with-errors"></div>
                 </div>
               </div>
               <div class="col-md-12">
-                <input type="submit" class="btn btn-blue btn-success btn-send" value="Send message">
+                <input type="submit" class="btn btn-blue btn-success btn-send disabled" value="Send message">
               </div>
             </div>
             <div class="row">
