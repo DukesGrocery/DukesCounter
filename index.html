@@ -73,7 +73,7 @@
         
         <li><a href="#services">ABOUT</a></li>
         <li><a href="#team">MENU</a></li>
-        <li><a href="#pricing" class="btn btn-red">EVENTS & RESERVATIONS</a></li>
+        <li><a href="#pricing">EVENTS & RESERVATIONS</a></li> <!-- class="btn btn-red -->
         <li><a href="#press">PRESS</a></li>
         <li><a href="#contact">CONTACT</a></li>
         <!-- <li><a href="#photos">PHOTOS</a></li>  -->
@@ -108,7 +108,7 @@
       <h2 class="bold">About</h2>
     </div>
     <div class="col-md-12 text-left">
-      <p>The result of a couple guys who love good food and cold drinks, Duke's Counter is a neighborhood pub and supper spot located directly across the street from the National Zoo in the Woodley Park neighborhood of Washington, D.C. Duke's Counter is the sister restaurant to Duke's Grocery in Dupont Circle. The idea is simple: create a fun spot that our friends (you!) can come in anytime and have a fulfilling meal, a tasty drink and great time in an atmosphere that is unpretentious and laid back. Tuck in, drink up and enjoy!</p>
+      <p>The result of a couple guys who love good food and cold drinks, Duke's Counter is a neighborhood pub and supper spot located directly across the street from the National Zoo in the Woodley Park neighborhood of Washington, D.C. Duke's Counter is the sister restaurant to <a href="http://www.dukesgrocery.com" target="new">Duke's Grocery</a> in Dupont Circle. The idea is simple: create a fun spot that our friends (you!) can come in anytime and have a fulfilling meal, a tasty drink and great time in an atmosphere that is unpretentious and laid back. Tuck in, drink up and enjoy!</p>
       <p>A nod to the ubiquitous corner cafés, bodegas and curry joints of the East London neighborhoods of Shoreditch and Hoxton, our culinary inspiration is as diverse as these brilliantly working class parts of the English capital. East London's funky juxtaposition of classic greasy spoons, hole-in-the-wall ethnic spots and ultra sleek avant-garde restaurants has created a food scene that is truly unique.</p>
       <p>We regularly update our menu depending on what is seasonally available and fresh. From our sandwiches, curries and salads to cocktails, craft beers and unique varietals, we work hard to keep the menus exciting while offering our guests a top-notch experience.</p>
       <p>All dishes are scratch made in small batches and we source from local purveyors with an emphasis on sustainable ingredients. We take great care in preparing your meals to maintain high standards of both value and quality, all to ensure you are fully satisfied but not walking out of here broke.</p>
@@ -158,8 +158,8 @@
       <h2 class="margin-top bold">Menu</h2>
       <!-- <h4 class="light muted">Try our award winning food!</h4> -->
       <p class="text-left"><br>
-        Our menu changes regularly using ingredients that are fresh that day or bought at the market that morning. Please keep in mind that once menu items are sold out, they are finished for the day. To see today's menu, check out our Facebook page.</p>
-      <p class="text-left">The bar feature seasonal cocktails, eight draught beer lines, unique varietals and a wide selection of spirits. The bar shelving is made with thick ceiling beams from this historic building that needed to be replaced during construction.</p>
+        Our menu changes regularly using ingredients that are fresh that day or bought at the market that morning. Please keep in mind that once menu items are sold out, they are finished for the day. To see today's menu, check out our <a href="http://www.facebook.com/DukesCounter">Facebook page</a>.</p>
+      <p class="text-left">The bar features seasonal cocktails, eight draught beer lines, unique varietals and a wide selection of spirits. The bar shelving is made with thick ceiling beams from this historic building that needed to be replaced during construction.</p>
     </div>
     <div class="row">
       <div class="col-md-3">
@@ -404,7 +404,7 @@
       
       <!-- contact form -->
       <div class="col-md-8">
-        <form id="contact-form" method="post" action="/contact.php" role="form" novalidate="true">
+        <form id="contact-form" method="post" action="/contact.php" role="form" novalidate>
           <!-- <div class="messages"><div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>Contact form successfully submitted. Thank you, I will get back to you soon!</div></div> -->
           <div class="controls">
             <div class="row">
@@ -438,7 +438,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="" data-error="Please,leave us a message."></textarea>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required data-error="Please,leave us a message."></textarea>
                   <div class="help-block with-errors"></div>
                 </div>
               </div>
@@ -533,6 +533,7 @@
 		  <div class="col-sm-6 text-center-mobile">
             <h5 class="light-white light">Late Night Menu</h5>
             <h3 class="regular white">10:30pm - Midnight</h3>
+            <h5 class="regular white">(Friday and Saturday nights only)</h3>
           </div>
         </div>
       </div>
