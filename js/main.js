@@ -169,4 +169,11 @@ jQuery(function($) {
 		$('.modal:visible').each(centerModal);
 	});
 });
-  
+
+var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: '294694495',
+        accessToken: '294694495.2032dc4.43d7456f7ed04b04ae43c8f00edf09f0',
+    });
+feed.run();
