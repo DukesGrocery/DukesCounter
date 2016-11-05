@@ -374,14 +374,12 @@
 
 <script type="text/javascript" src="https://raw.github.com/stevenschobert/instafeed.js/master/instafeed.min.js"></script>
 <script type="text/javascript">
-
-var feed = new Instafeed({
-  clientId: '2032dc4578ba4ea8b7323206008c8d5e',
-  get: 'tagged',
-  tagName: 'IGDC',
-  resolution: 'low_resolution'
-});
-feed.run();
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: '2032dc4578ba4ea8b7323206008c8d5e'
+    });
+    feed.run();
 </script>
 
 <div id="instafeed"></div>
