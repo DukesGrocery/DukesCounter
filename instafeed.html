@@ -4,12 +4,18 @@
 
 <script type="text/javascript" src="js/instafeed.min.js"></script>
 <script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'awesome',
-        accessToken: '294694495.2032dc4.43d7456f7ed04b04ae43c8f00edf09f0'
-    });
-    feed.run();
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: '294694495',
+    clientId: '2032dc4578ba4ea8b7323206008c8d5e',
+    accessToken: '294694495.2032dc4.43d7456f7ed04b04ae43c8f00edf09f0',
+    resolution: 'standard_resolution',
+    template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /><span>{{likes}}{{comments}}</span></a>',
+    sortBy: 'most-recent',
+    limit: 16,
+    links: false
+  });
+  userFeed.run();
 </script>
 
 </head>
