@@ -372,15 +372,18 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
 
-<script type="text/javascript" src="https://raw.github.com/stevenschobert/instafeed.js/master/instafeed.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/stevenschobert/instafeed.js/master/instafeed.js"></script>
 <script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'awesome',
-        clientId: '2032dc4578ba4ea8b7323206008c8d5e',
-        template: '<a href="{{link}}"><img src="{{image}}" /></a>'
-    });
-    feed.run();
+  var feed = new Instafeed({
+  get: 'user',
+  userId: [user_id],
+  accessToken: '[accessToken]',
+  resolution: 'low_resolution',
+  filter: function(image) {
+    return image.tags.indexOf('somehashtag') >= 0;
+  }
+});
+feed.run();
 </script>
 
 <div id="instafeed"></div>
