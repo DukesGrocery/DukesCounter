@@ -50,6 +50,16 @@
 <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/heimrichhannot/elegant-icons/master/css/elegant-icons.css">
 <!-- Main style -->
 <link rel="stylesheet" type="text/css" href="css/cardio.css">
+<!-- InstaFeed -->
+<script src="https://raw.github.com/stevenschobert/instafeed.js/master/instafeed.min.js"></script>
+  <script type="text/javascript">
+    var feed = new Instafeed({
+        get: "user",
+        userId: "2860723523",
+        clientId: "2032dc4578ba4ea8b7323206008c8d5e"
+    });
+    feed.run();
+</script>
 </head>
 
 <body>
@@ -372,15 +382,6 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
 
-<script type="text/javascript">
-    var userFeed = new Instafeed({
-        get: 'user',
-        userId: '2860723523',
-        accessToken: '294694495.2032dc4.43d7456f7ed04b04ae43c8f00edf09f0'
-    });
-    userFeed.run();
-</script>
-
 <div id="instafeed"></div>
 
 
@@ -530,7 +531,6 @@
   </ul>
   <a href="#" class="close-link"><i class="arrow_up"></i></a> </div>
 <!-- Scripts --> 
-<script src="https://raw.githubusercontent.com/stevenschobert/instafeed.js/master/instafeed.js"></script>
 <script src="js/jquery-1.11.1.min.js"></script> 
 <script src="js/owl.carousel.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
