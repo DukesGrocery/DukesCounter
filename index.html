@@ -51,15 +51,21 @@
 <!-- Main style -->
 <link rel="stylesheet" type="text/css" href="css/cardio.css">
 <!-- InstaFeed -->
-<script src="https://raw.github.com/stevenschobert/instafeed.js/master/instafeed.min.js"></script>
+<script type="text/javascript" src="js/instafeed.min.js"></script>
 <script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'user',
-        userID: '294694495',
-        clientId: '2032dc4578ba4ea8b7323206008c8d5e',
-        accessToken: '294694495.2032dc4.43d7456f7ed04b04ae43c8f00edf09f0',
-    });
-    feed.run();
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: '2860723523',
+    clientId: '2abd3c4520004001b5bef81e69569a25',
+    accessToken: '2860723523.2abd3c4.0d26c9e3eca0464ea915f9ea30e10e45',
+    resolution: 'standard_resolution',
+    template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+    sortBy: 'most-recent',
+    limit: 20,
+    links: false,
+    resolution: 'thumbnail',
+  });
+  userFeed.run();
 </script>
   
   </head>
