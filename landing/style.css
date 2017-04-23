@@ -7307,7 +7307,7 @@ label {
 		background-image:url(img/right.jpg);		
     }
 	
-	  .intro .intro-text h4 { color: #fff; }
+	  .intro .intro-text h4 { color: #fff; font-family: Poppins; }
 
 		.main-logo {
 			padding: 100px 0 0 0;
